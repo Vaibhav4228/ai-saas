@@ -37,19 +37,3 @@ const safetySettings = [
   },
 ];
 
- async function createChatSession() {
-  const chatSession =  model.startChat({
-    generationConfig,
-    safetySettings,
-    history: [],
-  });
-  return chatSession;
-}
-
-createChatSession().then(chatSession => {
-  console.log(chatSession);
-}).catch(error => {
-  console.error("Error creating chat session:", error);
-});
-
-module.exports = { createChatSession };

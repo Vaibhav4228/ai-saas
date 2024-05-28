@@ -24,7 +24,6 @@ function CreateForm() {
     const result = AiChatSessions.sendMessage("Description"+userInput+PROMPT);
     console.log(result.response.text());
 
-    // Further processing or handling of the generated form can be done here
   };
 
   return (
